@@ -59,7 +59,7 @@ public class User extends javax.swing.JFrame {
       
         // Fetch user data from the database
         try {
-            Connection con = DriverManager.getConnection("jdbc:MySQL://localhost:3306/java_user_database", "root", "host@123");
+            Connection con = DriverManager.getConnection("jdbc:MySQL://localhost:3306/DsAssSql", "root", "host@123");
  
             PreparedStatement pstmt;
             

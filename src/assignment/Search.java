@@ -174,7 +174,7 @@ public class Search extends javax.swing.JFrame {
     }
     
     private String usernameAlreadyExists(String username) {
-    String SUrl = "jdbc:MySQL://localhost:3306/java_user_database";
+    String SUrl = "jdbc:MySQL://localhost:3306/DsAssSql";
     String SUser = "root";
     String Spass = "host@123";
 

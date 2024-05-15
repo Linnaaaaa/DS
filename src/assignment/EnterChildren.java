@@ -37,7 +37,7 @@ public class EnterChildren extends javax.swing.JFrame {
                 if (!accountCreatedSuccessfully) {
                     try {
                         // Establish database connection
-                        String SUrl = "jdbc:MySQL://localhost:3306/java_user_database";
+                        String SUrl = "jdbc:MySQL://localhost:3306/DsAssSql";
                         String SUser = "root";
                         String Spass = "host@123";
                         
@@ -51,11 +51,11 @@ public class EnterChildren extends javax.swing.JFrame {
                         
                         int rowsAffected = pstmt.executeUpdate();
                         
-                        if (rowsAffected > 0) {
-                            System.out.println("User account deleted successfully.");
-                        } else {
-                            System.out.println("Failed to delete user account.");
-                        }
+//                        if (rowsAffected > 0) {
+//                            System.out.println("User account deleted successfully.");
+//                        } else {
+//                            System.out.println("Failed to delete user account.");
+//                        }
                         
                         con.close();
                     } catch (Exception e) {
@@ -350,7 +350,7 @@ boolean allUsernamesExist = true;
      //method to check if the username already exists in database
     private boolean usernameAlreadyExists(String username) {
         String SUrl, SUser, Spass;
-        SUrl = "jdbc:MySQL://localhost:3306/java_user_database";
+        SUrl = "jdbc:MySQL://localhost:3306/DsAssSql";
         SUser = "root";
         Spass="host@123";
 
@@ -371,7 +371,7 @@ boolean allUsernamesExist = true;
     
 // Method to save the child's name to the database
 private void saveChildNameToDatabase(String parentUsername, String[] childNames) {
-    String SUrl = "jdbc:MySQL://localhost:3306/java_user_database";
+    String SUrl = "jdbc:MySQL://localhost:3306/DsAssSql";
     String SUser = "root";
     String Spass = "host@123";
 

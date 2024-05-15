@@ -340,7 +340,7 @@ public class signup extends javax.swing.JFrame {
     private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
         String role,fullName, email, username, password, confirmp, query, x, y;
         String SUrl, SUser, Spass;
-        SUrl = "jdbc:MySQL://localhost:3306/java_user_database";
+        SUrl = "jdbc:MySQL://localhost:3306/DsAssSql";
         SUser = "root";
         Spass="host@123";
         
@@ -440,7 +440,7 @@ public class signup extends javax.swing.JFrame {
 
     //method to check if the username already exists in database
     private boolean usernameAlreadyExists(String username, String role) {
-         String SUrl = "jdbc:MySQL://localhost:3306/java_user_database";
+         String SUrl = "jdbc:MySQL://localhost:3306/DsAssSql";
     String SUser = "root";
     String Spass = "host@123";
 

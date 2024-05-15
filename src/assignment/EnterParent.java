@@ -27,7 +27,6 @@ public class EnterParent extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         this.previousFrame = previousFrame;
-        System.out.println(parentacc);
         
         // Add a window listener to the JFrame
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -35,7 +34,7 @@ public class EnterParent extends javax.swing.JFrame {
             public void windowClosing(java.awt.event.WindowEvent windowEvent) {
                 try {
                     // Establish database connection
-                    String SUrl = "jdbc:MySQL://localhost:3306/java_user_database";
+                    String SUrl = "jdbc:MySQL://localhost:3306/DsAssSql";
                     String SUser = "root";
                     String Spass = "host@123";
                     
@@ -167,7 +166,7 @@ public class EnterParent extends javax.swing.JFrame {
             
             try{
                 String SUrl, SUser, Spass, query;
-                SUrl = "jdbc:MySQL://localhost:3306/java_user_database";
+                SUrl = "jdbc:MySQL://localhost:3306/DsAssSql";
                 SUser = "root";
                 Spass="host@123";
         
@@ -225,7 +224,7 @@ public class EnterParent extends javax.swing.JFrame {
     //method to check if the username already exists in database
     private boolean usernameAlreadyExists(String username) {
         String SUrl, SUser, Spass;
-        SUrl = "jdbc:MySQL://localhost:3306/java_user_database";
+        SUrl = "jdbc:MySQL://localhost:3306/DsAssSql";
         SUser = "root";
         Spass="host@123";
 

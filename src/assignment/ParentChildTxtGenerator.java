@@ -27,7 +27,7 @@ public class ParentChildTxtGenerator {
         
         try {
             // Connect to the database
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/java_user_database", "root", "host@123");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/DsAssSql", "root", "host@123");
 
             // Prepare a SQL statement based on the user's role
             pstmt = con.prepareStatement("SELECT Username, Role, Parent1, Parent2, Child1, Child2, Child3, Child4, Child5, Child6, Child7, Child8, Child9, Child10 FROM user");
