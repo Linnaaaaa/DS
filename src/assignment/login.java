@@ -247,6 +247,7 @@ public class login extends javax.swing.JFrame {
                 // Check if parent1 exists as a parent
                 if (parent1 == null || !checkParentRoleExists(parent1)) {
                     deleteAccount(usernameOrEmail);
+                    JOptionPane.showMessageDialog(new JFrame(), "Incorrect username or password","Error", JOptionPane.ERROR_MESSAGE);
                     Username.setText("");
                     Password.setText("");
                     jComboBox1.setSelectedItem(null);
@@ -256,6 +257,7 @@ public class login extends javax.swing.JFrame {
                 // Check if parent2 exists as a parent (if parent2 is not null)
                 if (parent2 != null && !checkParentRoleExists(parent2)) {
                     deleteAccount(usernameOrEmail);
+                    JOptionPane.showMessageDialog(new JFrame(), "Incorrect username or password","Error", JOptionPane.ERROR_MESSAGE);
                     Username.setText("");
                     Password.setText("");
                     jComboBox1.setSelectedItem(null);
@@ -275,6 +277,7 @@ public class login extends javax.swing.JFrame {
 
                 if (!allChildrenExist) {
                     deleteAccount(usernameOrEmail);
+                    JOptionPane.showMessageDialog(new JFrame(), "Incorrect username or password","Error", JOptionPane.ERROR_MESSAGE);
                     Username.setText("");
                     Password.setText("");
                     jComboBox1.setSelectedItem(null);

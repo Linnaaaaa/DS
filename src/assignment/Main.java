@@ -277,7 +277,7 @@ public class Main extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-        if (currentUserType.equals("parent")) {
+        if (currentUserType.equals("Parent")) {
             // Display message for parent login
             JOptionPane.showMessageDialog(Main.this, "You are currently logged in as a parent.");
         } else if (currentUserType.equals("educator")){
@@ -289,7 +289,7 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
     private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
-        if (currentUserType.equals("student")) {
+        if (currentUserType.equals("Student")) {
             // Display message for student login
             JOptionPane.showMessageDialog(Main.this, "You are currently logged in as a student.");
         } else if (currentUserType.equals("educator")){
@@ -301,10 +301,10 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jComboBox2ActionPerformed
 
     private void jComboBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox3ActionPerformed
-        if (currentUserType.equals("student")) {
+        if (currentUserType.equals("Student")) {
             // Display message for student login
             JOptionPane.showMessageDialog(Main.this, "You are currently logged in as a student.");
-        } else if (currentUserType.equals("parent")){
+        } else if (currentUserType.equals("Parent")){
             // Display message for parent login
             JOptionPane.showMessageDialog(Main.this, "You are currently logged in as a parent.");
         }else{
